@@ -1,0 +1,23 @@
+{
+  "Block A": {
+    "name": "AB Hostel",
+    "warden": "Mr. Kamaldeep",
+    "contact": "8899988387",
+    "email": "hostels@smvdu.ac.in",
+    "address": "SMVDU Campus, Katra, J&K 182320"
+  },
+  "Block B": {
+    "name": "BCH Hostel",
+    "warden": "Ms. Shalini",
+    "contact": "8899988388",
+    "email": "hostels@smvdu.ac.in",
+    "address": "SMVDU Campus, Katra, J&K 182320"
+  },
+  "Block C": {
+    "name": "CVR Hostel",
+    "warden": "Mr. Anil",
+    "contact": "8899988389",
+    "email": "hostels@smvdu.ac.in",
+    "address": "SMVDU Campus, Katra, J&K 182320"
+  }
+}

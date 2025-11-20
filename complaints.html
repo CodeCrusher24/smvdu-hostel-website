@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complaints - Hostel Management System</title>
+  <link rel="icon" href="images/smvdu-logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">Complaints</h1>
+      <p class="page-subtitle">Register and track maintenance or conduct issues</p>
+    </div>
+
+    <div class="content-card">
+      <h2 style="color:#003366; margin-bottom:20px;">Register Complaint</h2>
+      <form>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px;">
+          <div class="form-group">
+            <label class="form-label">Category</label>
+            <select class="form-select" required>
+              <option value="">Select category</option>
+              <option>Maintenance</option>
+              <option>Mess</option>
+              <option>Conduct</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Room Number</label>
+            <input type="text" class="form-input" placeholder="e.g., A-101" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Description</label>
+          <textarea class="form-textarea" placeholder="Describe the issue" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Complaint</button>
+      </form>
+    </div>
+
+    <div class="content-card">
+      <h2 style="color:#003366; margin-bottom:20px;">Recent Complaints</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Ticket</th>
+            <th>Student ID</n>
+            <th>Category</th>
+            <th>Room</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="searchable-item">
+            <td>CMP-2301</td>
+            <td>STU2025045</td>
+            <td>Maintenance</td>
+            <td>A-101</td>
+            <td><span class="badge badge-info">In Progress</span></td>
+          </tr>
+          <tr class="searchable-item">
+            <td>CMP-2302</td>
+            <td>STU2025067</td>
+            <td>Mess</td>
+            <td>C-301</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

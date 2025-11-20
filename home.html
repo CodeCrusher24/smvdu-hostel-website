@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hostel Management System - Home</title>
+  <link rel="icon" href="images/smvdu-logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">Welcome to Hostel Management System</h1>
+      <p class="page-subtitle">Manage your hostel activities efficiently</p>
+    </div>
+
+    <!-- Quick Stats -->
+    <div class="grid-container">
+      <div class="info-card">
+        <div class="info-card-title">Total Students</div>
+        <div class="info-card-value">1,245</div>
+        <div class="info-card-label">Currently residing in hostels</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">Available Rooms</div>
+        <div class="info-card-value">156</div>
+        <div class="info-card-label">Out of 800 total rooms</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">Pending Requests</div>
+        <div class="info-card-value">23</div>
+        <div class="info-card-label">Gate passes & complaints</div>
+      </div>
+      <div class="info-card">
+        <div class="info-card-title">Fee Pending</div>
+        <div class="info-card-value">45</div>
+        <div class="info-card-label">Students with pending fees</div>
+      </div>
+    </div>
+
+    <!-- Recent Activities -->
+    <div class="content-card">
+      <h2 style="color: #003366; margin-bottom: 20px;">Recent Activities</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Activity</th>
+            <th>Student ID</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>15 Nov 2025</td>
+            <td>Room Allocation - Block A, Room 101</td>
+            <td>STU2025001</td>
+            <td><span class="badge badge-success">Completed</span></td>
+          </tr>
+          <tr>
+            <td>14 Nov 2025</td>
+            <td>Gate Pass Request - Outstation</td>
+            <td>STU2025012</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+          </tr>
+          <tr>
+            <td>14 Nov 2025</td>
+            <td>Complaint Registered - Maintenance</td>
+            <td>STU2025045</td>
+            <td><span class="badge badge-info">In Progress</span></td>
+          </tr>
+          <tr>
+            <td>13 Nov 2025</td>
+            <td>Fee Payment Received</td>
+            <td>STU2025023</td>
+            <td><span class="badge badge-success">Paid</span></td>
+          </tr>
+          <tr>
+            <td>12 Nov 2025</td>
+            <td>Room Transfer Request</td>
+            <td>STU2025056</td>
+            <td><span class="badge badge-warning">Under Review</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Quick Actions -->
+    <div class="content-card">
+      <h2 style="color: #003366; margin-bottom: 20px;">Quick Actions</h2>
+      <div class="grid-container">
+        <a href="room-allocation.html" style="text-decoration: none;">
+          <div class="info-card">
+            <div class="info-card-title">🏠 Room Allocation</div>
+            <div class="info-card-label">View and manage room assignments</div>
+          </div>
+        </a>
+        <a href="gate-pass.html" style="text-decoration: none;">
+          <div class="info-card">
+            <div class="info-card-title">🚪 Gate Pass</div>
+            <div class="info-card-label">Request and track gate passes</div>
+          </div>
+        </a>
+        <a href="complaints.html" style="text-decoration: none;">
+          <div class="info-card">
+            <div class="info-card-title">📝 Complaints</div>
+            <div class="info-card-label">Register and view complaints</div>
+          </div>
+        </a>
+        <a href="fee-details.html" style="text-decoration: none;">
+          <div class="info-card">
+            <div class="info-card-title">💰 Fee Details</div>
+            <div class="info-card-label">View fee information and payments</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

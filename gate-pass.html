@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gate Pass - Hostel Management System</title>
+  <link rel="icon" href="images/smvdu-logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">Gate Pass</h1>
+      <p class="page-subtitle">Request and track gate passes</p>
+    </div>
+
+    <div class="content-card">
+      <h2 style="color:#003366; margin-bottom: 20px;">Request Gate Pass</h2>
+      <form>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px;">
+          <div class="form-group">
+            <label class="form-label">Reason</label>
+            <input type="text" class="form-input" placeholder="e.g., Visit home" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Start Date</label>
+            <input type="date" class="form-input" id="start-date" name="start-date" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">End Date</label>
+            <input type="date" class="form-input" id="end-date" name="end-date" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Additional Notes</label>
+          <textarea class="form-textarea" placeholder="Optional"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit Request</button>
+      </form>
+    </div>
+
+    <div class="content-card">
+      <h2 style="color:#003366; margin-bottom: 20px;">Recent Gate Passes</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Request ID</th>
+            <th>Student ID</th>
+            <th>Reason</th>
+            <th>Duration</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="searchable-item">
+            <td>GP-1001</td>
+            <td>STU2025012</td>
+            <td>Medical Checkup</td>
+            <td>14–15 Nov 2025</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+          </tr>
+          <tr class="searchable-item">
+            <td>GP-1002</td>
+            <td>STU2025031</td>
+            <td>Visit Home</td>
+            <td>12–14 Nov 2025</td>
+            <td><span class="badge badge-success">Approved</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>
