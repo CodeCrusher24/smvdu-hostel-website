@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fee Details - Hostel Management System</title>
+  <link rel="icon" href="images/smvdu-logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="header"></div>
+
+  <main class="main-content">
+    <div class="page-header">
+      <h1 class="page-title">Fee Details</h1>
+      <p class="page-subtitle">View fee information and payment status</p>
+    </div>
+
+    <div class="content-card">
+      <h2 style="color:#003366; margin-bottom:20px;">Fee Summary</h2>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Student ID</th>
+            <th>Name</th>
+            <th>Total Fee</th>
+            <th>Paid</th>
+            <th>Pending</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="searchable-item">
+            <td>STU2025001</td>
+            <td>Rajesh Kumar</td>
+            <td>₹ 25,000</td>
+            <td>₹ 25,000</td>
+            <td>₹ 0</td>
+            <td><span class="badge badge-success">Paid</span></td>
+          </tr>
+          <tr class="searchable-item">
+            <td>STU2025005</td>
+            <td>Neha Gupta</td>
+            <td>₹ 25,000</td>
+            <td>₹ 20,000</td>
+            <td>₹ 5,000</td>
+            <td><span class="badge badge-warning">Pending</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-card">
+      <h2 style="color:#003366; margin-bottom:20px;">Make Payment</h2>
+      <form>
+        <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap:20px;">
+          <div class="form-group">
+            <label class="form-label">Student ID</label>
+            <input type="text" class="form-input" placeholder="Enter ID" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Amount</label>
+            <input type="number" class="form-input" placeholder="Enter amount" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Pay Now</button>
+      </form>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="script.js"></script>
+</body>
+</html>

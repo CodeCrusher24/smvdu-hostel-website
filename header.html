@@ -1,0 +1,111 @@
+<!-- 
+  Header Component
+  
+  This component contains the top section of the website with:
+  - Dark blue top bar with language options (left) and Official Website/Social Media (right)
+  - Dark blue border line
+  - University logo
+  - Institution information and recognition details
+  
+  Note: Image src attributes are intentionally empty as they are set dynamically
+  by header-loader.js based on the current page's location.
+-->
+
+<!-- Top dark blue bar with language options and social media -->
+<div class="top-bar" style="background-color: #003366; padding: 10px 24px; display: flex; justify-content: space-between; align-items: center; color: #ffffff; font-size: 0.9rem; width: 100%;">
+  <!-- Left side: Language options -->
+  <div class="top-bar-languages" style="display: flex; align-items: center; gap: 15px;">
+    <span style="cursor: pointer;">English</span>
+    <span style="cursor: pointer;">हिन्दी</span>
+    <span style="cursor: pointer;">اردو</span>
+  </div>
+  
+  <!-- Right side: Official Website text, Last Updated, and Social Media Icons -->
+  <div class="top-bar-right" style="display: flex; align-items: center; gap: 15px;">
+    <span>Official Website</span>
+    <span>Last Updated: <span id="last-updated-date">4th Nov, 2025</span></span>
+    <div class="top-bar-social" style="display: flex; align-items: center; gap: 10px;">
+      <a href="https://www.facebook.com/SMVDUniversity/" target="_blank"><img id="facebook-logo" src="" alt="Facebook" style="height: 24px; width: 24px;" /></a>
+      <a href="https://www.linkedin.com/school/shri-mata-vaishno-devi-university/" target="_blank"><img id="linkedin-icon" src="" alt="LinkedIn" style="height: 24px; width: 24px;" /></a>
+      <a href="https://twitter.com/smvduofficial" target="_blank"><img id="x-icon" src="" alt="X" style="height: 24px; width: 24px;" /></a>
+      <a href="https://www.youtube.com/SMVDUniversity" target="_blank"><img id="youtube-icon" src="" alt="YouTube" style="height: 24px; width: 24px;" /></a>
+      <a href="https://www.instagram.com/smvduniversityofficial/" target="_blank"><img id="instagram-icon" src="" alt="Instagram" style="height: 24px; width: 24px;" /></a>
+    </div>
+  </div>
+</div>
+
+<!-- Top dark blue border line -->
+<div style="width: 100%; height: 3px; background-color: #003366;"></div>
+
+<!-- SMVDU Header Bar -->
+<div class="smvdu-header-bar" style="padding: 20px 24px; background-color: #ffffff; display: flex; align-items: center; gap: 20px; justify-content: space-between;">
+  <div class="smvdu-header-left">
+    <img id="smvdu-logo" src="" alt="SMVDU Logo" class="smvdu-logo" style="height: 100px; width: auto;" />
+  </div>
+  <div class="smvdu-header-center" style="flex: 1;">
+    <div class="smvdu-header-main" style="color: #333333; font-size: 1.8rem; font-weight: 700; margin-bottom: 8px; font-family: 'Arial', sans-serif;">
+      Shri Mata Vaishno Devi University
+    </div>
+    <div class="smvdu-header-recognition" style="color: #666666; font-size: 0.95rem; font-weight: 400; font-family: 'Arial', sans-serif;">
+      A State University recognized under Section 2 (f) & 12 (B) of UGC Act of 1956
+    </div>
+  </div>
+  <!-- TCS accredited badge on the right side of the white header area -->
+  <div class="smvdu-header-right" style="display: flex; align-items: center; gap: 12px;">
+    <img id="tcs-accredited-logo" src="" alt="TCS Accredited" style="height: 72px; width: auto; display: block;" />
+  </div>
+</div>
+
+<!-- Global Navigation Bar -->
+<div id="global-navbar">
+<nav class="navbar" style="background-color: #003366; position: sticky; top: 0; z-index: 1000;">
+  <div class="navbar-container" style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; padding: 0 24px;">
+    <a href="home.html" class="navbar-brand" style="color: #ffffff; font-size: 1.3rem; font-weight: 700; text-decoration: none; padding: 15px 0;">HostelMS</a>
+    <button class="navbar-toggle" style="display: none; background: none; border: none; color: #ffffff; font-size: 1.5rem; cursor: pointer; padding: 10px;">☰</button>
+    <ul class="navbar-menu" style="display: flex; list-style: none; gap: 0; margin: 0; padding: 0;">
+      <li class="navbar-item"><a href="home.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Home</a></li>
+      <li class="navbar-item"><a href="room-allocation.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Room Allocation</a></li>
+      <li class="navbar-item"><a href="details.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Details</a></li>
+      <li class="navbar-item"><a href="gate-pass.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Gate Pass</a></li>
+      <li class="navbar-item"><a href="complaints.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Complaints</a></li>
+      <li class="navbar-item"><a href="fee-details.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Fee Details</a></li>
+      <li class="navbar-item"><a href="noticeboard.html" class="navbar-link" style="color: #ffffff; text-decoration: none; padding: 15px 20px; display: block; font-weight: 500;">Noticeboard</a></li>
+    </ul>
+    <div id="auth-controls" style="color: #ffffff; padding: 15px 0; font-size: 0.95rem;"></div>
+  </div>
+  <!-- Mobile menu styles will be handled by style.css -->
+  
+</nav>
+</div>
+
+<!-- Quick Link below Navbar (right aligned) -->
+<div class="subheader-quicklink" style="max-width: 1200px; margin: 0 auto; padding: 6px 24px; text-align: right; font-size: 0.9rem;">
+  <a href="public-notice-result.html" class="subheader-link" style="color:#003366; text-decoration:none;">Public Notice / Result</a>
+  <span class="subheader-sep" style="color:#999; margin:0 6px;">|</span>
+  <a href="noticeboard.html" class="subheader-link" style="color:#003366; text-decoration:none;">Noticeboard</a>
+</div>
+
+<meta name="viewport" content="width=1200" />
+
+<!-- Script to update the Last Updated date automatically -->
+<script>
+  (function() {
+    const dateElement = document.getElementById('last-updated-date');
+    if (dateElement) {
+      const now = new Date();
+      const day = now.getDate();
+      const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+      const month = monthNames[now.getMonth()];
+      const year = now.getFullYear();
+      
+      // Add ordinal suffix to day
+      const getOrdinal = (n) => {
+        const s = ['th', 'st', 'nd', 'rd'];
+        const v = n % 100;
+        return n + (s[(v - 20) % 10] || s[v] || s[0]);
+      };
+      
+      dateElement.textContent = getOrdinal(day) + ' ' + month + ', ' + year;
+    }
+  })();
+</script>

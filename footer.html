@@ -1,0 +1,90 @@
+<!-- 
+  Footer Component
+  SMVDU Footer with four columns: University Info, Useful Links, Important Links, and optional Weather
+-->
+<footer class="smvdu-footer-bar" style="background-color: #003366; color: #ffffff; padding: 40px 20px 20px; font-family: Arial, sans-serif;">
+  <div class="footer-main" style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1.5fr 1.5fr 1.5fr; gap: 30px; margin-bottom: 30px;">
+    
+    <!-- Left Column: University Information -->
+    <div class="footer-col-left">
+      <div class="footer-logo-section" style="margin-bottom: 20px;">
+        <img id="footer-smvdu-logo" src="images/smvdu-logo.png" alt="SMVDU Logo" style="height: 60px; width: auto; margin-bottom: 10px;" />
+        <div style="font-size: 0.85rem; color: #ff6600; margin-top: 5px;">विज्ञानं ब्रह्म</div>
+      </div>
+      <div style="font-size: 1rem; font-weight: 600; margin-bottom: 15px;">Shri Mata Vaishno Devi University</div>
+      <div style="font-size: 0.9rem; line-height: 1.6; margin-bottom: 15px;">
+        Katra, Jammu and Kashmir 182320
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6;">
+        <div><strong>Direct Line:</strong> 8899988387</div>
+        <div><strong>Email:</strong> <a href="mailto:hostels@smvdu.ac.in" style="color: #ffffff; text-decoration: none;">hostels@smvdu.ac.in</a></div>
+      </div>
+    </div>
+
+    <!-- Second Column: Useful Links -->
+    <div class="footer-col-useful">
+      <div style="font-size: 1rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #00cc66; padding-bottom: 5px; display: inline-block;">
+        Useful Links
+      </div>
+      <div class="footer-links" style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem;">
+        <a href="room-allocation.html" style="color: #ffffff; text-decoration: none;">Room Allocation</a>
+        <a href="details.html" style="color: #ffffff; text-decoration: none;">Student Details</a>
+        <a href="noticeboard.html" style="color: #ffffff; text-decoration: none;">Noticeboard</a>
+        <a href="public-notice-result.html" style="color: #ffffff; text-decoration: none;">Public Notice / Result</a>
+        <a href="#" style="color: #ffffff; text-decoration: none;">Contact Warden</a>
+      </div>
+    </div>
+
+    <!-- Third Column: Important Links -->
+    <div class="footer-col-important">
+      <div style="font-size: 1rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #00cc66; padding-bottom: 5px; display: inline-block;">
+        Important Links
+      </div>
+      <div class="footer-links" style="display: flex; flex-direction: column; gap: 8px; font-size: 0.9rem;">
+        <a href="#" style="color: #ffffff; text-decoration: none;">Hostel Rules</a>
+        <a href="#" style="color: #ffffff; text-decoration: none;">Mess Menu</a>
+        <a href="#" style="color: #ffffff; text-decoration: none;">Student Portal</a>
+        <a href="#" style="color: #ffffff; text-decoration: none;">Help Desk</a>
+      </div>
+    </div>
+
+    <!-- Fourth Column: Hostel Information (replacing Weather) -->
+    <div class="footer-col-hostel">
+      <div style="font-size: 1rem; font-weight: 600; margin-bottom: 15px; border-bottom: 2px solid #00cc66; padding-bottom: 5px; display: inline-block;">
+        Hostel Information
+      </div>
+      <div style="font-size: 0.9rem; line-height: 1.6;">
+        <div style="margin-bottom: 10px;"><strong>Hostel Office</strong></div>
+        <div style="margin-bottom: 10px;">Shri Mata Vaishno Devi University</div>
+        <div style="margin-bottom: 10px;">Katra, Jammu and Kashmir 182320</div>
+        <div style="margin-bottom: 10px;"><strong>Email:</strong> <a href="mailto:hostels@smvdu.ac.in" style="color: #ffffff; text-decoration: none;">hostels@smvdu.ac.in</a></div>
+        <div><strong>Contact:</strong> 8899988387</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Bar -->
+  <div class="footer-bottom" style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 20px; display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto;">
+    <div style="font-size: 0.9rem;">
+      Copyright © SMVDU <span id="current-year"></span>. All Rights Reserved
+    </div>
+    <div style="font-size: 0.9rem; color: #ff0000; font-weight: 600;">
+      The Only Official Website
+    </div>
+    <div class="footer-social-icons" style="display: flex; gap: 12px;">
+      <a href="https://www.facebook.com/SMVDUniversity/" target="_blank" style="color: #ffffff; font-size: 1.2rem;">📘</a>
+      <a href="https://www.linkedin.com/school/shri-mata-vaishno-devi-university/" target="_blank" style="color: #ffffff; font-size: 1.2rem;">💼</a>
+      <a href="#" target="_blank" style="color: #ffffff; font-size: 1.2rem;">📌</a>
+      <a href="#" target="_blank" style="color: #ffffff; font-size: 1.2rem;">📝</a>
+      <a href="https://twitter.com/smvduofficial" target="_blank" style="color: #ffffff; font-size: 1.2rem;">🐦</a>
+      <a href="#" target="_blank" style="color: #ffffff; font-size: 1.2rem;">📺</a>
+      <a href="https://www.instagram.com/smvduniversityofficial/" target="_blank" style="color: #ffffff; font-size: 1.2rem;">📷</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Script to update the copyright year automatically -->
+<script>
+  // Set the current year in the footer
+  document.getElementById('current-year').textContent = new Date().getFullYear();
+</script>

@@ -1,0 +1,38 @@
+[
+  {
+    "block": "Block A",
+    "room": 101,
+    "occupants": [
+      { "id": "23bcs060", "name": "Parag", "course": "B.Tech CSE", "year": "1st Year", "email": "parag@smvdu.ac.in", "phone": "9876540000" },
+      { "id": "STU2025001", "name": "Rajesh Kumar", "course": "B.Tech CSE", "year": "3rd Year", "email": "rajesh.kumar@smvdu.ac.in", "phone": "9876543210" }
+    ]
+  },
+  {
+    "block": "Block A",
+    "room": 102,
+    "occupants": [
+      { "id": "STU2025002", "name": "Amit Sharma", "course": "B.Tech ECE", "year": "3rd Year", "email": "amit.sharma@smvdu.ac.in", "phone": "9876543211" }
+    ]
+  },
+  {
+    "block": "Block B",
+    "room": 201,
+    "occupants": [
+      { "id": "STU2025003", "name": "Priya Patel", "course": "B.Tech ME", "year": "2nd Year", "email": "priya.patel@smvdu.ac.in", "phone": "9876543212" }
+    ]
+  },
+  {
+    "block": "Block A",
+    "room": 103,
+    "occupants": [
+      { "id": "STU2025004", "name": "Vikram Singh", "course": "M.Tech CSE", "year": "1st Year", "email": "vikram.singh@smvdu.ac.in", "phone": "9876543213" }
+    ]
+  },
+  {
+    "block": "Block C",
+    "room": 301,
+    "occupants": [
+      { "id": "STU2025005", "name": "Neha Gupta", "course": "MBA", "year": "1st Year", "email": "neha.gupta@smvdu.ac.in", "phone": "9876543214" }
+    ]
+  }
+]

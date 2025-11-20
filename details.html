@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details - Hostel Management System</title>
+    <link rel="icon" href="images/smvdu-logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1 class="page-title">Student Details</h1>
+            <p class="page-subtitle">View comprehensive information about students</p>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="content-card" id="search-section">
+            <div style="display: flex; gap: 15px; margin-bottom: 20px; flex-wrap: wrap;">
+                <input type="text" class="form-input search-input" placeholder="Search by Student ID, Name, Email, or Phone" style="flex: 1; min-width: 250px;">
+                <select class="form-select" style="width: 200px;">
+                    <option>All Courses</option>
+                    <option>B.Tech</option>
+                    <option>M.Tech</option>
+                    <option>MBA</option>
+                    <option>BBA</option>
+                    <option>Ph.D</option>
+                </select>
+                <select class="form-select" style="width: 200px;">
+                    <option>All Blocks</option>
+                    <option>Block A</option>
+                    <option>Block B</option>
+                    <option>Block C</option>
+                    <option>Block D</option>
+                </select>
+                <button class="btn btn-primary">Search</button>
+            </div>
+        </div>
+
+        <!-- Student Details Table (visible for Warden/Caretaker) -->
+        <div class="content-card" id="student-table-section">
+            <h2 style="color: #003366; margin-bottom: 20px;">Student Information</h2>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Block</th>
+                        <th>Room No.</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="searchable-item">
+                        <td>STU2025001</td>
+                        <td>Rajesh Kumar</td>
+                        <td>B.Tech CSE</td>
+                        <td>3rd Year</td>
+                        <td>rajesh.kumar@smvdu.ac.in</td>
+                        <td>9876543210</td>
+                        <td>Block A</td>
+                        <td>101</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025002</td>
+                        <td>Amit Sharma</td>
+                        <td>B.Tech ECE</td>
+                        <td>3rd Year</td>
+                        <td>amit.sharma@smvdu.ac.in</td>
+                        <td>9876543211</td>
+                        <td>Block A</td>
+                        <td>102</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025003</td>
+                        <td>Priya Patel</td>
+                        <td>B.Tech ME</td>
+                        <td>2nd Year</td>
+                        <td>priya.patel@smvdu.ac.in</td>
+                        <td>9876543212</td>
+                        <td>Block B</td>
+                        <td>201</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025004</td>
+                        <td>Vikram Singh</td>
+                        <td>M.Tech CSE</td>
+                        <td>1st Year</td>
+                        <td>vikram.singh@smvdu.ac.in</td>
+                        <td>9876543213</td>
+                        <td>Block A</td>
+                        <td>103</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025005</td>
+                        <td>Neha Gupta</td>
+                        <td>MBA</td>
+                        <td>1st Year</td>
+                        <td>neha.gupta@smvdu.ac.in</td>
+                        <td>9876543214</td>
+                        <td>Block C</td>
+                        <td>301</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025006</td>
+                        <td>Suresh Yadav</td>
+                        <td>B.Tech CE</td>
+                        <td>4th Year</td>
+                        <td>suresh.yadav@smvdu.ac.in</td>
+                        <td>9876543215</td>
+                        <td>Block B</td>
+                        <td>202</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025007</td>
+                        <td>Kavita Mishra</td>
+                        <td>B.Tech CSE</td>
+                        <td>2nd Year</td>
+                        <td>kavita.mishra@smvdu.ac.in</td>
+                        <td>9876543216</td>
+                        <td>Block D</td>
+                        <td>401</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                    <tr class="searchable-item">
+                        <td>STU2025008</td>
+                        <td>Anil Verma</td>
+                        <td>B.Tech EEE</td>
+                        <td>3rd Year</td>
+                        <td>anil.verma@smvdu.ac.in</td>
+                        <td>9876543217</td>
+                        <td>Block A</td>
+                        <td>104</td>
+                        <td><button class="btn btn-secondary" style="padding: 5px 10px; font-size: 0.9rem;">View Details</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Student Room & Roommates (visible for Student) -->
+        <div class="content-card" id="student-room-section" style="display:none;">
+            <h2 style="color:#003366; margin-bottom: 15px;">Your Room Details</h2>
+            <div id="student-room-details" style="line-height: 1.8; margin-bottom: 15px;"></div>
+            <h3 style="color:#003366; margin-bottom: 10px;">Your Roommates</h3>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="student-roommates"></tbody>
+            </table>
+        </div>
+
+        <!-- Student Hostel Details (visible for Student) -->
+        <div class="content-card" id="student-hostel-section" style="display:none;">
+            <h2 style="color:#003366; margin-bottom: 15px;">Your Hostel Details</h2>
+            <div id="student-hostel-details" style="line-height: 1.8;"></div>
+        </div>
+
+        <!-- Student Personal Details (visible for Student) -->
+        <div class="content-card" id="student-personal-section" style="display:none;">
+            <h2 style="color:#003366; margin-bottom: 15px;">Your Details</h2>
+            <div id="student-personal-details" style="line-height: 1.8;"></div>
+        </div>
+
+        <!-- Rooms Directory (visible for Warden/Caretaker) -->
+        <div class="content-card" id="admin-rooms-section" style="display:none;">
+            <h2 style="color:#003366; margin-bottom: 15px;">Rooms Directory</h2>
+            <div id="room-directory" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;"></div>
+        </div>
+
+        <!-- Selected Room Details (visible for Warden/Caretaker) -->
+        <div class="content-card" id="admin-room-details-section" style="display:none;">
+            <h2 style="color:#003366; margin-bottom: 15px;">Room Details</h2>
+            <div id="selected-room-label" style="margin-bottom: 10px; color:#666;"></div>
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Year</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-room-occupants"></tbody>
+            </table>
+        </div>
+
+        <!-- Student Statistics -->
+        <div class="grid-container" id="stats-section">
+            <div class="info-card">
+                <div class="info-card-title">Total Students</div>
+                <div class="info-card-value">1,245</div>
+                <div class="info-card-label">Currently in hostels</div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-title">By Course</div>
+                <div class="info-card-value">8</div>
+                <div class="info-card-label">Different courses</div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-title">New Admissions</div>
+                <div class="info-card-value">156</div>
+                <div class="info-card-label">This semester</div>
+            </div>
+            <div class="info-card">
+                <div class="info-card-title">Graduating</div>
+                <div class="info-card-value">89</div>
+                <div class="info-card-label">This year</div>
+            </div>
+        </div>
+
+        <!-- Detailed Student View (Sample) -->
+        <div class="content-card" id="sample-profile-section">
+            <h2 style="color: #003366; margin-bottom: 20px;">Student Profile Example</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+                <div>
+                    <h3 style="color: #003366; margin-bottom: 15px;">Personal Information</h3>
+                    <div style="line-height: 1.8;">
+                        <div><strong>Student ID:</strong> STU2025001</div>
+                        <div><strong>Name:</strong> Rajesh Kumar</div>
+                        <div><strong>Date of Birth:</strong> 15/03/2004</div>
+                        <div><strong>Gender:</strong> Male</div>
+                        <div><strong>Address:</strong> Delhi, India</div>
+                        <div><strong>Phone:</strong> 9876543210</div>
+                        <div><strong>Email:</strong> rajesh.kumar@smvdu.ac.in</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #003366; margin-bottom: 15px;">Academic Information</h3>
+                    <div style="line-height: 1.8;">
+                        <div><strong>Course:</strong> B.Tech Computer Science Engineering</div>
+                        <div><strong>Year:</strong> 3rd Year</div>
+                        <div><strong>Semester:</strong> 5th Semester</div>
+                        <div><strong>Admission Date:</strong> 15 Aug 2023</div>
+                        <div><strong>CGPA:</strong> 8.5</div>
+                    </div>
+                </div>
+                <div>
+                    <h3 style="color: #003366; margin-bottom: 15px;">Hostel Information</h3>
+                    <div style="line-height: 1.8;">
+                        <div><strong>Block:</strong> Block A</div>
+                        <div><strong>Room Number:</strong> 101</div>
+                        <div><strong>Floor:</strong> Ground Floor</div>
+                        <div><strong>Allocation Date:</strong> 15 Aug 2025</div>
+                        <div><strong>Status:</strong> <span class="badge badge-success">Active</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div id="footer"></div>
+    <script src="script.js"></script>
+    </body>
+    </html>
+
